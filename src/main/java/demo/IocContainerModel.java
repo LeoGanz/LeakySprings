@@ -1,7 +1,7 @@
 package demo;
 
 import demo.leaky_springs.SecretPrototypeService;
-import demo.leaky_springs.SecretService;
+import demo.leaky_springs.casestudy.SecretService;
 
 public class IocContainerModel {
     private static final SecretService SECRET_SERVICE;

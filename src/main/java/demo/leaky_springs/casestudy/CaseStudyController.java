@@ -1,4 +1,4 @@
-package demo.leaky_springs;
+package demo.leaky_springs.casestudy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,14 +16,14 @@ public class CaseStudyController {
     private SecretPOJO secretPOJO = new SecretPOJO();
 
     @GetMapping("/service")
-    public ResponseEntity<String> onLeakVariantService() {
+    public ResponseEntity<String> leakVariantService() {
         String result = secretService.getSecrets();
         System.out.println("Handling data: " + result);
         return ResponseEntity.ok("");
     }
 
     @GetMapping("/pojo")
-    public ResponseEntity<String> onLeakVariantPojo() {
+    public ResponseEntity<String> leakVariantPojo() {
         String result = secretPOJO.getSecrets();
         System.out.println("Handling data: " + result);
         return ResponseEntity.ok("");

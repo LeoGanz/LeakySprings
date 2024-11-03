@@ -1,12 +1,9 @@
-package demo.leaky_springs;
-
-import org.springframework.stereotype.Service;
+package demo.leaky_springs.casestudy;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
-public class SecretService {
+public class SecretPOJO {
     private final Map<String, String> json = new HashMap<>();
 
     public String getSecrets() {

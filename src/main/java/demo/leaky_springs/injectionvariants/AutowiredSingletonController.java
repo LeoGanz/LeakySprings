@@ -1,6 +1,6 @@
 package demo.leaky_springs.injectionvariants;
 
-import demo.leaky_springs.SecretService;
+import demo.leaky_springs.casestudy.SecretService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
